@@ -21,7 +21,7 @@ dns:
       - https://dns.alidns.com/dns-query
 ```
 
-此流程图为了更直观和简单地说明 Clash.Meta 的 DNS 工作流程，忽略了 Clash 内部的 DNS 映射处理。
+此流程图为了更直观和简单地说明 Clash 的 DNS 工作流程，忽略了 Clash 内部的 DNS 映射处理。
 
 ```mermaid
 flowchart TD

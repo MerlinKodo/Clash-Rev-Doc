@@ -1,8 +1,8 @@
-site_name: 虚空终端 Docs
-repo_url: https://github.com/MetaCubeX/Clash.Meta
-repo_name: MetaCubeX/Clash.Meta
-copyright: Copyright &copy 2023 Clash.Meta
-edit_uri: "https://github.com/MetaCubeX/Meta-Docs/blob/main/docs/"
+site_name: Clash.Rev Docs
+repo_url: https://github.com/MerlinKodo/clash-rev
+repo_name: MerlinKodo/clash-rev
+copyright: Copyright &copy 2023 Clash.Rev
+edit_uri: "https://github.com/MerlinKodo/Clash-Rev-Docs/blob/main/docs/"
 dev_addr: '127.0.0.1:11451'
 extra:
   generator: false
@@ -11,9 +11,9 @@ extra:
     property: G-1BJ0XH0RSM
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/MetaCubeX/Clash.Meta
+      link: https://github.com/MerlinKodo/clash-rev
     - icon: material/file-document
-      link: https://github.com/MetaCubeX/Meta-Docs
+      link: https://github.com/MerlinKodo/Clash-Rev-Docs
 plugins:
   - search
   - awesome-pages

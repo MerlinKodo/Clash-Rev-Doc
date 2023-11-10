@@ -1,5 +1,5 @@
 ---
-description: Clash.meta有如下三种内置策略
+description: Clash有如下三种内置策略
 ---
 
 # 内置策略

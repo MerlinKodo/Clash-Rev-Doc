@@ -139,12 +139,12 @@ external-ui-name: xd      #  合并为 external-ui/xd
 ## **自定义外部用户界面下载地址**
 
 ```yaml
-external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip" #从 GitHub Pages 分支获取
+external-ui-url: "https://github.com/MerlinKodo/metacubexd/archive/refs/heads/gh-pages.zip" #从 GitHub Pages 分支获取
 ```
 
 ## **缓存**
 
-在 Clash 官方中，profile 应为扩展配置，但在 Clash.meta, 仅作为缓存项使用
+在 Clash 官方中，profile 应为扩展配置，但在 Clash.Rev, 仅作为缓存项使用
 
 可选值 `true/false`
 
@@ -239,15 +239,15 @@ geodata-loader: memconservative
 
 ```yaml
 geox-url:
-  geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+  geoip: "https://testingcf.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/geoip.dat"
+  geosite: "https://testingcf.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://testingcf.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/country.mmdb"
 ```
 
 ## **自定客户端UA**
 
-自定义外部资源下载时使用的的UA,默认为 `clash.meta`
+自定义外部资源下载时使用的的UA,默认为 `clash.rev`
 
 ```yaml
-global-ua: clash.meta
+global-ua: clash.rev
 ```

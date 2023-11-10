@@ -5,18 +5,6 @@ hide:
 ---
 # 完整配置示例
 
-## Alpha 分支
-
-开发版,新特性支持
-
-[https://github.com/MetaCubeX/Clash.Meta/blob/Alpha/docs/config.yaml](https://github.com/MetaCubeX/Clash.Meta/blob/Alpha/docs/config.yaml)
-
-## Meta 分支
-
-稳定版,每月一更,部分文档内容不会及时发布在meta分支内
-
-[https://github.com/MetaCubeX/Clash.Meta/blob/Meta/docs/config.yaml](https://github.com/MetaCubeX/Clash.Meta/blob/Meta/docs/config.yaml)
-
 ## 懒人配置
 
 在 `proxy-providers` 补充你的订阅即可食用
@@ -61,9 +49,9 @@ external-controller: 127.0.0.1:9090
 
 geodata-mode: true
 geox-url:
-  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+  geoip: "https://fastly.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/geoip.dat"
+  geosite: "https://fastly.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://fastly.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/country.mmdb"
 
 find-process-mode: strict
 global-client-fingerprint: chrome

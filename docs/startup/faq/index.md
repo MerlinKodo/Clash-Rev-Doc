@@ -6,15 +6,11 @@ hide:
 
 # 常见问题
 
-### alpha 和 meta 分支的区别
-
-alpha 分支为最新提交分支，meta 分支每隔一段时间合并 alpha 分支的代码，meta 分支不一定比 alpha 分支更稳定。
-
 ### 我应该下载哪一个文件？
 
 release 中，包的文件名中包含了多个信息，包括
 
-- 程序名称（clash.meta）
+- 程序名称（clash.rev）
 - 操作系统（如 android、darwin、freebsd、linux、windows 等）
 - 架构（如 386、amd64、arm32v7、arm64 等）
 - 编译方式
@@ -25,4 +21,3 @@ release 中，包的文件名中包含了多个信息，包括
 - 提交的 git hash 值（如 f90066f）
 
 可以根据这些信息或使用 `uname -m` 检查设备的 CPU 架构, 并在发布页面中找到相应的版本的可执行文件。
-

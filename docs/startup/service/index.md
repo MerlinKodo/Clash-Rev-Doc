@@ -8,24 +8,24 @@ hide:
 
 ## 使用 systemd
 
-- 下载二进制可执行文件 [releases](https://github.com/MetaCubeX/Clash.Meta/releases)
+- 下载二进制可执行文件 [releases](https://github.com/MerlinKodo/clash-rev/releases)
 
-- 将下载的二进制可执行文件重名名为 `Clash-Meta` 并移动到 `/usr/local/bin/`
+- 将下载的二进制可执行文件重名名为 `clash` 并移动到 `/usr/local/bin/`
 
-- 以守护进程的方式，运行 Clash-Meta。
+- 以守护进程的方式，运行 clash。
 
-使用以下命令将 Clash 二进制文件复制到 /usr/local/bin, 配置文件复制到 /etc/Clash-Meta:
+使用以下命令将 clash 二进制文件复制到 /usr/local/bin, 配置文件复制到 /etc/clash:
 
 ```shell
-cp Clash-Meta /usr/local/bin
-cp config.yaml /etc/Clash-Meta
+cp clash /usr/local/bin
+cp config.yaml /etc/clash
 ```
 
-创建 systemd 配置文件 `/etc/systemd/system/Clash-Meta.service`:
+创建 systemd 配置文件 `/etc/systemd/system/clash.service`:
 
 ```ini
 [Unit]
-Description=Clash-Meta Daemon, Another Clash Kernel.
+Description=clash Daemon, Another Clash Kernel.
 After=network.target NetworkManager.service systemd-networkd.service iwd.service
 
 [Service]
@@ -36,7 +36,7 @@ CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_RAW CAP_NET_BIND_SERVICE CAP_SYS_TIM
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_RAW CAP_NET_BIND_SERVICE CAP_SYS_TIME
 Restart=always
 ExecStartPre=/usr/bin/sleep 1s
-ExecStart=/usr/local/bin/Clash-Meta -d /etc/Clash-Meta
+ExecStart=/usr/local/bin/clash -d /etc/clash
 ExecReload=/bin/kill -HUP $MAINPID
 
 [Install]
@@ -49,27 +49,27 @@ WantedBy=multi-user.target
 systemctl daemon-reload
 ```
 
-启用 Clash-Meta 服务：
+启用 clash 服务：
 
 ```shell
-systemctl enable Clash-Meta
+systemctl enable clash
 ```
 
-使用以下命令立即启动 Clash-Meta:
+使用以下命令立即启动 clash:
 
 ```shell
-systemctl start Clash-Meta
+systemctl start clash
 ```
 
-使用以下命令使 Clash-Meta 重新加载:
+使用以下命令使 clash 重新加载:
 
 ```shell
-systemctl reload Clash-Meta
+systemctl reload clash
 ```
 
-使用以下命令检查 Clash-Meta 的运行状况和日志:
+使用以下命令检查 clash 的运行状况和日志:
 
 ```shell
-systemctl status Clash-Meta
+systemctl status clash
 journalctl -xe
 ```
