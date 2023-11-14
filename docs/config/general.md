@@ -38,6 +38,16 @@ skip-auth-prefixes:
   - ::1/128
 ```
 
+设置开启allow-lan时，连接的IP白名单和黑名单
+
+```yaml
+lan-allowed-ips: # 允许连接的 IP 地址段，仅作用于 allow-lan 为 true, 默认值为0.0.0.0/0和::/0
+  - 0.0.0.0/0
+  - ::/0
+lan-disallowed-ips: # 禁止连接的 IP 地址段, 黑名单优先级高于白名单
+  - 10.65.10.0/24
+```
+
 ## **运行模式**
 
 * ***`rule`*** 规则匹配
