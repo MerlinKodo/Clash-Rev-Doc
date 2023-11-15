@@ -80,6 +80,7 @@ nav:
     - index.md
   - 安装:
     - startup/index.md
+    - startup/cli/index.md
     - startup/service/index.md
     - startup/client/index.md
     - startup/faq/index.md
