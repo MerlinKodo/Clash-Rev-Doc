@@ -21,6 +21,7 @@ Flags:
       --ext-ui string       override external ui directory, env: CLASH_OVERRIDE_EXTERNAL_UI_DIR
   -m, --geodata             set geodata mode
   -h, --help                help for clash
+      --secret string       override secret, env: CLASH_OVERRIDE_SECRET
   -t, --test                test configuration and exit
   -v, --version             show current version of clash
 ```
@@ -52,6 +53,10 @@ Flags:
 ### `--ext-ui string`
 
 指定外部UI目录，不传递时会使用环境变量`CLASH_OVERRIDE_EXTERNAL_UI_DIR`的值。
+
+### `--secret string`
+
+指定Secret，不传递时会使用环境变量`CLASH_OVERRIDE_SECRET`的值。
 
 ## 其他
 
