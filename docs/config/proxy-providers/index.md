@@ -13,7 +13,6 @@ proxy-providers:
     url: ""
     path: ./proxy_providers/provider1.yaml
     interval: 3600
-    dialer-proxy: proxy
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -49,10 +48,6 @@ provider 类型，可选 `http/file`
 ### interval
 
 更新 provider 的时间，单位为秒
-
-### dialer-proxy
-
-为代理集合内所有节点附加[dialer-proxy](../proxies/index.md#dialer-proxy)
 
 ### health-check
 
