@@ -254,6 +254,13 @@ geox-url:
   mmdb: "https://testingcf.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/country.mmdb"
 ```
 
+## 自动更新 GEO 数据
+
+```yaml
+geo-auto-update: false # 是否自动更新 GEO 数据
+geo-update-interval: 24 # GEO 数据更新间隔，单位为小时
+```
+
 ## **自定客户端UA**
 
 自定义外部资源下载时使用的的UA,默认为 `clash.rev`

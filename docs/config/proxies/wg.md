@@ -61,7 +61,9 @@
 
 ### private-key
 
-base64编码的Wireguard客户端私钥。可以使用`wg genkey`命令生成私钥，使用`wg pubkey <private-key>`命令获取对应公钥
+base64编码的Wireguard客户端私钥
+
+可以使用`wg genkey | tee privatekey | wg pubkey > publickey`命令生成一对可用的公私钥文件
 
 ### server
 
