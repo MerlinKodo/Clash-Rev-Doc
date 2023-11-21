@@ -142,9 +142,10 @@ curl 示例 `curl -H 'Authorization: Bearer ${secret}'  http://${controller-api}
 
 ### `/connections`
 
-请求方法：`GET`
+请求方法：`GET` or `ws`
 
 - 获取连接信息
+- 使用 `ws` 协议可实时获取连接信息，传递`interval`参数可设置刷新间隔，单位为秒，最小为 1 秒
 
 请求方法：`DELETE`
 
@@ -155,6 +156,13 @@ curl 示例 `curl -H 'Authorization: Bearer ${secret}'  http://${controller-api}
 请求方法：`DELETE`
 
 - 关闭特定连接
+
+### `/connections/close`
+
+请求方法：`POST`
+
+- 关闭多个连接
+- 必须发送数据，数据格式为 `{"ids": ["id1", "id2"]}`
 
 ## 代理集合
 
