@@ -137,6 +137,7 @@ curl 示例 `curl -H 'Authorization: Bearer ${secret}'  http://${controller-api}
 请求方法：`GET`
 
 - 获取规则信息
+- 支持设置URL参数 `?page=1&size=10` 分页获取
 
 ## 连接
 
